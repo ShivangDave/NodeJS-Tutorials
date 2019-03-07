@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1> Welcome, <%= name %> </h1>
+    <p> Job: <%= data.job %> </p>
+    <p> Age: <%= data.age %> </p>
+    <h2> Hobbies: </h2>
+    <ul>
+      <% data.hobbies.forEach(function(item){ %>
+        <li> <%= item %> </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
