@@ -1,0 +1,19 @@
+{
+  "name": "expressdemo",
+  "version": "1.0.0",
+  "description": "A test file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Shivang Dave",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
