@@ -1,0 +1,13 @@
+body{background: skyblue; font-family: verdana; color: #FFF; padding: 30px;}
+h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+p{font-size: 16px; text-align: center;}
+nav, li{font-size: 20px; text-transform: capitalize; letter-spacing: 2px}
+h2{font-size: 30px; text-align: center;}
+
+/*form{}*/
+
+input[type="text"]{height: 20px; margin-top: 10px; display: grid;}
+
+input[type="submit"]{display: grid; font-size: 40px; height: 40px; margin-top: 10px;}
+
+label{height: 20px; margin-top: 10px; display: grid;}

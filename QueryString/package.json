@@ -1,0 +1,21 @@
+{
+  "name": "querystringdemo",
+  "version": "1.0.0",
+  "description": "test query",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "query",
+    "string"
+  ],
+  "author": "Shivang Dave",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.10",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
