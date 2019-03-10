@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>To Do Application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <script src="assets/todo.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/todolist.js"></script>
 </head>
 <body>
-    
+  <div class="header">
+    <h2>To Do List</h2>
+  </div>
+    <div class="row">
+      <form id="form1" action="/index" method="POST">
+          <div class="column">
+              <input id="txtbox" type="text" name="item" placeholder="Add item.." required />
+              <input id="submitbtn" type="submit" value="Add Item" />
+          </div>
+      </form>
+    </div>
+    <div class="tasklist-container">
+      <div class="tasklist">
+        <ul>
+          <% for(var i=0; i<todos.length; i++){ %>
+            <li><%= todos[i].item %></li>
+          <% }; %>
+        </ul>
+      </div>
+    </div>
 </body>
 </html>
