@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    font-family: Verdana;
+    background-color: #7c43bd;
+}
+
+/* CSS Outer Container */
+.outer-container{
+    display: grid;
+}
+
+.header-container{
+    display: block;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #12005e;
+    box-shadow: 0px 3px 3px #000000;
+}
+
+#title{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/* CSS Form Input */
+
+.form-container{
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+#form-input{
+    height: 60px;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type='text']{
+    border: none;
+    flex: 90%;
+    font-size: 15px;
+    text-indent: 10px;
+    box-shadow: 0px 3px 3px #000000;
+}
+
+input[type='submit']{
+    margin-right: 10px;
+    border: none;
+    flex: 10%;
+    font-size: 15px;
+    background-color: #4a148c;
+    color: white;
+    box-shadow: 0px 3px 3px #000000;
+}
+
+input[type='submit']:hover{
+    background-color: #12005e;
+    color: white;
+    border: none;
+    flex: 10%;
+}
+
+ul{
+    list-style: none;
+    list-style-type: none;
+    width: 100%;
+    padding: 0px;
+}
+
+.list-container{
+    color: white;
+    background-color: #7c43bd;
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 3px #000000;
+    
+    height: 60px;
+    background-color: #4a148c;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li:hover{
+    cursor: grabbing;
+    background-color: #12005e;
+}

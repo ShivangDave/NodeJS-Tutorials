@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To Do Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/scripts/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/scripts/todolist.js"></script>
+</head>
+<body>
+    <div class="outer-container">
+            <div class="header-container">
+                <label id="title">Things to do!</label>
+            </div>
+            <div class="form-container">
+                <form id="form-input" action="/" method="POST">
+                    <input type="text" name="item" placeholder="Add task" required />
+                    <input type="submit" value="Add Task" />
+                </form>
+            </div>
+            <div class="list-container">
+                <ul>
+                    <% for(var i=0; i<task.length;i++){ %>
+                        <li><%= task[i].item %></li>
+                    <% }%>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
